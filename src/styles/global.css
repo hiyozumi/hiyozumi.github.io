@@ -1,2 +1,60 @@
 @import './fonts.css';
 @import 'katex/dist/katex.min.css';
+
+:root {
+  --black: 35, 38, 43;
+  --gray: 112, 116, 124;
+  --gray-light: 229, 231, 235;
+  --gray-dark: 48, 52, 60;
+  --paper-bg: color-mix(in srgb, #fdfdfd 97%, var(--paper-accent));
+  --paper-bg-deep: color-mix(in srgb, #f2f4f7 94%, var(--paper-accent));
+  --paper-surface: color-mix(in srgb, #ffffff 98%, var(--paper-accent));
+  --paper-surface-muted: color-mix(in srgb, #f7f8fa 96%, var(--paper-accent));
+  --paper-surface-rgb: 255, 255, 255;
+  --paper-ink: color-mix(in srgb, #272d35 96%, var(--paper-accent));
+  --paper-ink-soft: color-mix(in srgb, #667080 94%, var(--paper-accent));
+  --paper-ink-faint: color-mix(in srgb, #9099a8 94%, var(--paper-accent));
+  --paper-control: color-mix(in srgb, #f6f8fa 96%, var(--paper-accent));
+  --paper-control-hover: color-mix(in srgb, #eef2f7 94%, var(--paper-accent));
+  --paper-nav: color-mix(in srgb, #ffffff 98%, var(--paper-accent));
+  --paper-card-wash-top: color-mix(in srgb, #ffffff 98%, var(--paper-accent));
+  --paper-card-wash-bottom: color-mix(in srgb, #f7f8fa 96%, var(--paper-accent));
+  --paper-page-bg: var(--paper-bg);
+  --paper-detail-bg: var(--paper-bg);
+  --paper-theme-color: var(--paper-bg);
+  --gray-gradient: rgba(229, 231, 235, 0.38), var(--paper-bg);
+}
+
+:root[data-theme='dark'] {
+  --black: 234, 235, 239;
+  --gray: 166, 171, 182;
+  --gray-light: 57, 61, 72;
+  --gray-dark: 225, 228, 235;
+  --paper-bg: color-mix(in srgb, #17191e 97%, var(--paper-accent));
+  --paper-bg-deep: color-mix(in srgb, #111318 95%, var(--paper-accent));
+  --paper-surface: color-mix(in srgb, #20232a 96%, var(--paper-accent));
+  --paper-surface-muted: color-mix(in srgb, #272b34 94%, var(--paper-accent));
+  --paper-surface-rgb: 32, 35, 42;
+  --paper-line: rgba(225, 230, 240, 0.08);
+  --paper-line-strong: rgba(225, 230, 240, 0.14);
+  --paper-ink: color-mix(in srgb, #eaebef 96%, var(--paper-accent));
+  --paper-ink-soft: color-mix(in srgb, #b5bbc7 94%, var(--paper-accent));
+  --paper-ink-faint: color-mix(in srgb, #8992a2 94%, var(--paper-accent));
+  --paper-control: color-mix(in srgb, #2a2e38 94%, var(--paper-accent));
+  --paper-control-hover: color-mix(in srgb, #343a47 92%, var(--paper-accent));
+  --paper-nav: color-mix(in srgb, #20232a 96%, var(--paper-accent));
+  --paper-card-wash-top: color-mix(in srgb, #272b34 94%, var(--paper-accent));
+  --paper-card-wash-bottom: color-mix(in srgb, #1c2028 95%, var(--paper-accent));
+  --paper-page-bg: linear-gradient(
+    180deg,
+    color-mix(in srgb, #17191e 97%, var(--paper-accent)) 0%,
+    color-mix(in srgb, #111318 95%, var(--paper-accent)) 100%
+  );
+  --paper-detail-bg: linear-gradient(
+    180deg,
+    color-mix(in srgb, #17191e 97%, var(--paper-accent)) 0%,
+    color-mix(in srgb, #111318 95%, var(--paper-accent)) 100%
+  );
+  --paper-theme-color: var(--paper-bg);
+  --gray-gradient: rgba(57, 61, 72, 0.38), var(--paper-bg);
+}
