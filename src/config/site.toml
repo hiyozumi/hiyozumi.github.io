@@ -1,7 +1,7 @@
 [config.site]
 title = " zumi's site"
 description = "A personal space for software, games, art, music, and creative experiments."
-pageTitle = "hiyozumi site"
+pageTitle = "zumi's site"
 pageDescription = "Things I make, ideas I explore, and notes from the creative process."
 url = "https://hiyozumi.github.io"
 repository = "https://github.com/hiyozumi/hiyozumi.github.io"
@@ -48,7 +48,7 @@ maxResults = 6
 title = "Blog"
 kicker = "Notes & articles"
 subtitle = "Thoughts from the making process."
-note = "Development logs, technical notes, creative processes, and ideas worth keeping."
+note = "Development logs, articles, and ideas worth keeping."
 postsPerPage = 6
 dateFormat = "yyyy-MM-dd"
 metadataSeparator = "icon"
@@ -135,7 +135,7 @@ comment = true
 [config.profile]
 name = "ズミ"
 handle = "hiyozumi"
-role = "someone who creates"
+role = "Writer & Creator"
 email = "akihisahyo@gmail.com"
 website = "https://hiyozumi.github.io/"
 github = "https://github.com/hiyozumi"
@@ -150,17 +150,17 @@ avatar = "/images/avatar.webp"
 label = "Blog"
 href = "/blog"
 
-[[config.topNav.links]]
-label = "Projects"
-module = "projects"
+# [[config.topNav.links]]
+# label = "Projects"
+# module = "projects"
 
-[[config.topNav.links]]
-label = "Vibe"
-module = "vibe"
+# [[config.topNav.links]]
+# label = "Vibe"
+# module = "vibe"
 
-[[config.topNav.links]]
-label = "Media"
-module = "media"
+# [[config.topNav.links]]
+# label = "Media"
+# module = "media"
 
 [[config.topNav.links]]
 label = "About"
@@ -181,7 +181,7 @@ text = [
 title = "the name is "
 name = "ズミ"
 body = [
-  "I'm a software engineer interested in creating things through code and creative expression. My interests span software development, game development, illustration, music, and storytelling. I enjoy bringing ideas into existence whether through a piece of software or creative works.",
+  "I'm a software engineer who writes, may it be a piece of code or storytelling, and sometimes do artworks. I have interest in software development, illustration, music, and world building. I enjoy bringing ideas into existence wheter through software or creative works.",
   "This site is my little corner of the internet, a place for things I want to share.",
 ]
 
@@ -237,18 +237,19 @@ copy = false
 # Currently exploring
 # --------------------------------------------------
 
+
 [[config.home.doing]]
-text = "Currently exploring soundtrack composition"
+text = "Software Engineer is a hell of a job market rn so I'm doing game dev"
 mark = "01"
 
 [[config.home.doing]]
-text = "Software Engineer is a hell of a market rn so I'm doing game dev"
+text = "Occassionally draw in my free time"
 mark = "02"
 
 [[config.home.doing]]
-text = "Occassionally draw in my free time"
+text = "Exploring soundtrack composition"
 mark = "03"
 
 [[config.home.doing]]
-text = "Playing Table-top RPG weekly"
+text = "Playing Table-top RPG almost weekly"
 mark = "04"
