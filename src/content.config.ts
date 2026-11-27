@@ -1,6 +1,7 @@
 import { defineCollection } from 'astro:content';
 import { file, glob } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { existsSync } from 'node:fs';
 import navfolioConfig from '../navfolio.config';
 import { isPageModuleEnabled } from './plugins/config';
 
@@ -54,7 +55,17 @@ const blogArticleSchema = (context: Parameters<CollectionSchemaFactory>[0]) =>
     sticky: z.union([z.boolean(), z.number().positive()]).optional().default(false),
   });
 
-const contentSource = process.env.NAVFOLIO_CONTENT_SOURCE === 'docs' ? 'docs' : 'content';
+const explicitContentSource = process.env.NAVFOLIO_CONTENT_SOURCE;
+const contentSource =
+  explicitContentSource === 'docs'
+    ? 'docs'
+    : explicitContentSource === 'content'
+      ? 'content'
+      : existsSync('./src/content')
+        ? 'content'
+        : existsSync('./src/docs')
+          ? 'docs'
+          : 'content';
 const contentBase = contentSource === 'docs' ? './src/docs' : './src/content';
 const projectsModuleEnabled = isPageModuleEnabled(navfolioConfig, 'projects');
 const vibeModuleEnabled = isPageModuleEnabled(navfolioConfig, 'vibe');

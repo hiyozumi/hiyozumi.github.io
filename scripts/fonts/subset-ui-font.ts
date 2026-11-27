@@ -36,7 +36,17 @@ const pythonCommands = [
   (command, index, commands) =>
     (index === 0 ? existsSync(command) : true) && commands.indexOf(command) === index,
 );
-const contentSource = process.env.NAVFOLIO_CONTENT_SOURCE === 'docs' ? 'docs' : 'content';
+const explicitContentSource = process.env.NAVFOLIO_CONTENT_SOURCE;
+const contentSource =
+  explicitContentSource === 'docs'
+    ? 'docs'
+    : explicitContentSource === 'content'
+      ? 'content'
+      : existsSync(join(projectRoot, 'src/content'))
+        ? 'content'
+        : existsSync(join(projectRoot, 'src/docs'))
+          ? 'docs'
+          : 'content';
 const contentRoot = contentSource === 'docs' ? 'src/docs' : 'src/content';
 const projectsModuleEnabled = isPageModuleEnabled(navfolioConfig, 'projects');
 const resolvedVibeModule = getResolvedPageModule(navfolioConfig, 'vibe');
