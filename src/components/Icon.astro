@@ -38,13 +38,13 @@ import {
   Instagram,
 } from 'lucide-astro';
 
-interface Props extends Omit<LucideProps, 'name'> {
+interface Props extends Omit<LucideProps, 'name' | 'size'> {
   name: string;
   size?: number | string;
-  class?: string;
+  className?: string;
 }
 
-const { name, size = 20, class: className, style, ...attrs } = Astro.props;
+const { name, size = 20, className, style, ...attrs } = Astro.props;
 
 const icons = {
   bilibili: Tv,
