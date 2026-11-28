@@ -47,7 +47,7 @@ maxResults = 6
 [config.pages.blog]
 title = "Blog"
 kicker = "Notes & articles"
-subtitle = "Thoughts from the making process."
+subtitle = "Thoughts"
 note = "Development logs, articles, and ideas worth keeping."
 postsPerPage = 6
 dateFormat = "yyyy-MM-dd"
