@@ -178,8 +178,8 @@ text = [
 ]
 
 [config.home.intro]
-title = "welcome to my site"
-name = ""
+title = " the name is "
+name = "ズミ"
 body = [
   "Welcome to my little corner on the internet. I'm an aspiring software engineer, who write not only code but other things, may it be some backstories, or Japanese sentence, depends on the mood.",
   "I don't really have any particular theme in mind for this space, think of it as personal notebook that happen to be on internet."
