@@ -55,7 +55,7 @@ jobs:
 
       - name: Build site
         env:
-          NAVFOLIO_CONTENT_SOURCE: docs
+          NAVFOLIO_CONTENT_SOURCE: content
           NAVFOLIO_COMMENTS_ENABLED: ${{ vars.NAVFOLIO_COMMENTS_ENABLED }}
           NAVFOLIO_COMMENTS_PROVIDER: ${{ vars.NAVFOLIO_COMMENTS_PROVIDER }}
           NAVFOLIO_GISCUS_REPO: ${{ vars.NAVFOLIO_GISCUS_REPO }}
