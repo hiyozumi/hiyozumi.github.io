@@ -135,7 +135,7 @@ comment = true
 [config.profile]
 name = "ズミ"
 handle = "hiyozumi"
-role = "Writer & Creator"
+role = "Writer"
 email = "akihisahyo@gmail.com"
 website = "https://hiyozumi.github.io/"
 github = "https://github.com/hiyozumi"
