@@ -178,11 +178,11 @@ text = [
 ]
 
 [config.home.intro]
-title = "the name is "
-name = "ズミ"
+title = "welcome to my site"
+name = ""
 body = [
-  "I'm a software engineer who writes, may it be a piece of code or storytelling, and sometimes do artworks. I have interest in software development, illustration, music, and world building. I enjoy bringing ideas into existence wheter through software or creative works.",
-  "This site is my little corner of the internet, a place for things I want to share.",
+  "Welcome to my little corner on the internet. I'm an aspiring software engineer, who write not only code but other things, may it be some backstories, or Japanese sentence, depends on the mood.",
+  "I don't really have any particular theme in mind for this space, think of it as personal notebook that happen to be on internet."
 ]
 
 [config.home.latest]
